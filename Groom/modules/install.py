@@ -4,16 +4,16 @@ from pathlib import Path
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.handlers.handler import Handler
-from kabeer import LOGGER, app
-from config import PREFIX
+from Groom import LOGGER, groom
+from config import Config
 
-@app.on_message(filters.command("install", PREFIX) & filters.me)
+@groom.on_message(filters.command("install", PREFIX) & filters.me & filters.USER(Config.SUDO))
 async def load_plugin(client: Client, message: Message):
     status_message = await message.reply("...")
     try:
         if message.reply_to_message is not None:
             down_loaded_plugin_name = await message.reply_to_message.download(
-                file_name="./kabeer/modules/"
+                file_name="./Groom/modules/"
             )
             if down_loaded_plugin_name is not None:
                 # LOGGER.info(down_loaded_plugin_name)
