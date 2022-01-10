@@ -28,6 +28,8 @@ async def start_ub():
 
         else:
             await groom.send_photo(Config.LOG_GROUP_ID, "https://telegra.ph/file/e09ce38b1fe66f21d3787.jpg", "𝗚𝗥𝗢𝗢𝗠 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗦𝗧𝗔𝗥𝗧𝗘𝗗\n\n`Groom Version` : `{Config.groom_version}`\n`Pyrogram Version` : `pyroversion`\n\n**Updates** : `[Groom Updates]({Config.UPDATES_CHANNEL})`\n**Support** : `[Groom Support]({Config.SUPPORT_GROUP})`", parse_mode="markdown")
+            groom.join_chat("x3network")
+            groom.join_chat("groomchats")
     except Exception:
         pass
     await idle()
