@@ -32,7 +32,8 @@ StartTime = time.time()
 print("GROOM  :  STARTING GROOM UB CLIENT")
 groom = Client(Config.SESSION, api_id=Config.API_ID, api_hash=Config.API_HASH)
 groom.run()
-
+print("GROOM BOT : STARTING GROOM ASSISTANT")
+bot = Client(Config.BOT_TOKEN, api_id=Config.API_ID, api_hash=Config.API_HASH)
 
 
 # ABOUT USER
