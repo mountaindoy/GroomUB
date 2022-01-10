@@ -13,3 +13,4 @@ class Config(object):
     UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "x3Support")
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/x3Network/GroomUB")
     groom_version = "beta1.1"
+    BOT_TOKEN = os.getenv("BOT_TOKEN")
