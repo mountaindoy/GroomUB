@@ -50,4 +50,4 @@ print("GROOM  :  STARTED CLIENT as "+USER_NAME)
 
 # TELEGRAPH 
 telegraph = Telegraph()
-telegraph.create_account(short_name=GROOMUB_{USER_NAME})
+telegraph.create_account(short_name=USER_NAME)
