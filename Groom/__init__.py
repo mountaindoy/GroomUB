@@ -4,7 +4,7 @@ import time
 from pyrogram import Client, errors
 from config import Config
 import logging
-from telegraph import Telegraph
+import telegraph
 
 
 # LOGGING
