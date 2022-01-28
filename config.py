@@ -1,4 +1,4 @@
-import os
+from os import getenv,environ,get,
 
 class Config(object):
     API_HASH = os.getenv("API_HASH")
