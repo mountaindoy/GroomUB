@@ -44,7 +44,7 @@ USER_NAME = ME.first_name + (ME.last_name or "")
 USER_USERNAME = ME.username
 USER_MENTION = ME.mention
 USER_DC_ID = ME.dc_id
-print("GROOM  :  STARTED CLIENT as {USER_NAME}")
+print("GROOM  :  STARTED CLIENT as "+USER_NAME)
 
 
 
